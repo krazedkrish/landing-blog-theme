@@ -2,28 +2,21 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <ul class="list-inline">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    {% for social in site.social %}
                     <li>
-                        <a href="#home">Home</a>
+                        <a class="social" href="{{ social.url }}">
+                            <span class="fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <!-- <i class="fa fa-{{ social.title }} fa-fw"></i> -->
+                                <i class="fa fa-{{ social.title }} fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
                     </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
+                    {% endfor %}
                 </ul>
-                <p class="copyright text-muted small">Copyright &copy; {{ site.title }} All Rights Reserved</p>
-            </div>
-            <div class="col-md-4">
-                Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.
+                <p class="copyright text-muted text-center">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</p>
             </div>
         </div>
     </div>

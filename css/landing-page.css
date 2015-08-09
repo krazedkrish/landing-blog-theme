@@ -158,9 +158,17 @@ h6 {
 
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #eee;
 }
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+a.social {
+    color: #333;
+}
+
+a:hover.social, a:focus.social {
+    color: #0085A1;
 }
