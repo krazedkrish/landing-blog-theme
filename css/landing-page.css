@@ -261,18 +261,10 @@ form .row:first-child .floating-label-form-group{
 }
 
 .submit-btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  border-radius: 0;
-  padding: 15px 25px;
-  color: #555;
+    border-radius: 0;
+    border: 4px solid;
 }
-.submit-btn-default:hover,
-.submit-btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
-  color: white;
+
+p.contact-message {
+    font-size: 20px;
 }
