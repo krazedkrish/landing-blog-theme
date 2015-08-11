@@ -174,15 +174,15 @@ a:hover.social, a:focus.social {
 }
 
 a {
-  color: #404040;
+    color: #404040;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+    color: #0085a1;
 }
 a img:hover,
 a img:focus {
-  cursor: zoom-in;
+    cursor: zoom-in;
 }
 
 .floating-label-form-group{
@@ -305,9 +305,11 @@ p.contact-message {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 3em;
-
 }
 
+.page-message > h3 {
+  font-weight: 100;
+}
 
 hr.small {
     max-width: 100px;
@@ -316,78 +318,131 @@ hr.small {
     border-color: white;
 }
 
-
 .post-preview > a {
-  color: #404040;
+    color: #404040;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
-  text-decoration: none;
-  color: #0085a1;
+    text-decoration: none;
+    color: #0085a1;
 }
 .post-preview > a > .post-title {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .post-preview > a > .post-subtitle {
-  margin: 0;
-  font-weight: 300;
-  margin-bottom: 10px;
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
+    color: #808080;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
 }
 .post-preview > .post-meta > a {
-  text-decoration: none;
-  color: #404040;
+    text-decoration: none;
+    color: #404040;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
-  text-decoration: underline;
+    color: #0085a1;
+    text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
-    font-size: 36px;
-  }
+    .post-preview > a > .post-title {
+        font-size: 36px;
+    }
 }
 
 .pager {
-  margin: 20px 0 0;
+    margin: 20px 0 0;
 }
 .pager li > a,
 .pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  padding: 10px 5px;
-  background-color: white;
-  border-radius: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 10px 5px;
+    background-color: white;
+    border-radius: 0;
 }
 @media only screen and (min-width: 768px) {
-  .pager li > a,
-  .pager li > span {
-    font-size: 14px;
-    padding: 15px 25px;
-  }
+    .pager li > a,
+    .pager li > span {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+    color: white;
+    background-color: #0085a1;
+    border: 1px solid #0085a1;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #808080;
-  background-color: #404040;
-  cursor: not-allowed;
+    color: #808080;
+    background-color: #404040;
+    cursor: not-allowed;
+}
+
+
+.post-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    color: #404040;
+    background-size: cover;
+    background-color: #eee;
+}
+
+article {
+    line-height: 1.5;
+    margin: 30px 0px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+blockquote {
+    color: #808080;
+    font-style: italic;
+}
+
+.post-heading{
+    margin: 0;
+    font-size: 3em;
+}
+
+.post-subheading {
+  font-weight: 400;
+}
+
+.meta {
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 30px;
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.meta a {
+    color: #ccc;
+}
+
+.caption {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  font-style: italic;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
